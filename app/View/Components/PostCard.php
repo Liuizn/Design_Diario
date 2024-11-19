@@ -14,17 +14,19 @@ class PostCard extends Component
     public $authorName;
     public $authorProfilePic;
     public $postUrl;
+    public $fullWidth = "false";
 
     /**
      * Create a new component instance.
      */
-    public function __construct($postImageCover, $postTitle, $authorName, $authorProfilePic, $postUrl)
+    public function __construct($postImageCover, $postTitle, $authorName, $authorProfilePic, $postUrl, $fullWidth)
     {
         $this->postImageCover = $postImageCover;
         $this->postTitle = $postTitle;
         $this->authorName = $authorName;
         $this->authorProfilePic = $authorProfilePic;
         $this->postUrl = $postUrl;
+        $this->fullWidth = $fullWidth;
     }
 
     /**
