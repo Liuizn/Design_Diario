@@ -26,5 +26,22 @@
                 <x-highlighted-author-container authorName="Rafaela Silva" authorDescription="Rafaela Silva é uma designer editorial que compartilha seu conhecimento no Design Diário, uma plataforma de artigos para designers. Seus conteúdos abordam tipografia, diagramação e layout para revistas e livros, oferecendo dicas valiosas sobre como criar projetos visuais impactantes e equilibrados que melhoram a leitura e a experiência do usuário." authorProfileLink="" authorProfilePic="https://www.dci.com.br/wp-content/uploads/2021/02/cabelo-cacheado-franja.jpg" authorFollowersData="124" authorVerifiedArticlesData="54"></x-highlighted-author-container>
             </div>
         </div>
+        <div class="flex flex-row align-center justify-end flex-wrap p-5">
+            <div class="bg-lime-300 p-2 ml-2 hover:bg-lime-100 transition-all duration-300" style="border-radius: 100%; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#111827"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+            </div>
+            <div class="bg-lime-300 p-2 ml-2 hover:bg-lime-100 transition-all duration-300" style="border-radius: 100%; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"  stroke="#111827"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-behance"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" /><path d="M3 12l4.5 0" /><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" /><path d="M16 6l3 0" /></svg>
+            </div>
+            <div class="bg-lime-300 p-2 ml-2 hover:bg-lime-100 transition-all duration-300" style="border-radius: 100%; cursor: pointer;">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#111827"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+            </div>
+            <div class="bg-lime-300 p-2 ml-2 hover:bg-lime-100 transition-all duration-300" style="border-radius: 100%; cursor: pointer;">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#111827"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+            </div>
+            <div class="bg-lime-300 p-2 ml-2 hover:bg-lime-100 transition-all duration-300" style="border-radius: 100%; cursor: pointer;">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#111827"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+            </div>
+        </div>
     </div>
 @endsection
