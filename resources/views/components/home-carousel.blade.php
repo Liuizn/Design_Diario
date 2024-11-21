@@ -1,5 +1,5 @@
-<div class="flex flex-row flex-wrap justify-center w-fit" style="width: 735px; height: 300px">
-    <div class="swiper" style="border-radius: 10px">
+<div class="flex flex-row flex-wrap justify-center w-fit" style="width: 935px; height: 300px">
+    <div class="swiper home-carousel" style="border-radius: 10px">
         <div class="swiper-wrapper">
             <div class="swiper-slide flex flex-col items-center justify-center bg-blue-500 text-white p-8" style="background-image: radial-gradient(#0f1959 50px, transparent 10px), radial-gradient(#0f1959 10px, transparent 10px);
                             background-size: 100px 100px;
@@ -34,3 +34,35 @@
         <div class="swiper-pagination" style=""></div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const homeCarousel = new Swiper('.home-carousel', {
+            slidesPerView: 1, // Um slide visível por vez
+            spaceBetween: 10, // Espaço entre os slides (em pixels)
+            loop: false, // Ativa o looping infinito
+            autoplay: {
+                delay: 7000, // Troca automática a cada 3 segundos
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Permite clicar nos pontos da paginação
+            },
+            on: {
+                init: function () {
+                    document.querySelectorAll('.swiper-pagination-bullet').forEach(bullet => {
+                        bullet.style.backgroundColor = '#fff';
+                    });
+                },
+                slideChangeTransitionStart: function () {
+                    document.querySelectorAll('.swiper-pagination-bullet-active').forEach(activeBullet => {
+                        activeBullet.style.backgroundColor = '#fff';
+                    });
+
+                    document.querySelectorAll('.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)').forEach(inactiveBullet => {
+                        inactiveBullet.style.backgroundColor = '#fff';
+                    });
+                },
+            }
+        });
+    });
+</script>

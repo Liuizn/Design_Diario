@@ -6,6 +6,22 @@
         <div class="flex flex-row flex-wrap align-center justify-center mb-20">
             <x-home-carousel></x-home-carousel>
         </div>
+        <div class="flex flex-row flex-wrap align-center justify-center mb-3">
+            <div class="mr-4">
+                <x-category-card categoryName="UI/UX" categoryImage="https://www.applify.com.sg/blog/wp-content/uploads/2023/09/UI-vs-UX.png"></x-category-card>
+            </div>
+            <div class="mr-4">
+                <x-category-card categoryName="Motion" categoryImage="https://media.licdn.com/dms/image/v2/D5612AQGisoB-JOMVTw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1678184113655?e=2147483647&v=beta&t=W2oSsYH5iz2JRFI_gam4QvIh9r-G-Q4b8Rlh3YGqKH0"></x-category-card>
+            </div>
+        </div>
+        <div class="flex flex-row flex-wrap align-center justify-center mb-20">
+            <div class="mr-4">
+                <x-category-card categoryName="Interiores" categoryImage="https://brlincorp.com.br/wp-content/uploads/2023/04/PROJETO-GESICA.jpeg"></x-category-card>
+            </div>
+            <div class="mr-4">
+                <x-category-card categoryName="Branding" categoryImage="https://www.templateupdates.com/sites/default/files/2023-01/Soda%20Can%20Mockups.jpg"></x-category-card>
+            </div>
+        </div>
         <div class="flex flex-col flex-wrap items-center align-center self-center w-fit mb-20">
             <div class="flex flex-row flex-wrap justify-center w-auto">
                 <x-post-card postImageCover="https://149361125.v2.pressablecdn.com/wp-content/uploads/2018/09/Sala-1.jpg" postTitle="Design de Interiores: Tendências de 2025" authorName="Lucas Ramil" authorProfilePic="https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg" postUrl="" fullWidth="false"/>
@@ -21,7 +37,7 @@
         </div>
         <div class="flex flex-col flex-wrap pt-4">
             <div class="flex flex-row align-center mb-10">
-                <span class="text-3xl font-bold italic bg-lime-300 text-end pr-4 p-1 rounded-tr-lg rounded-br-lg shadow-md" style="width: 400px;">Autores Populares</span>
+                <span class="text-3xl font-bold italic bg-lime-300 text-end pr-4 p-1 rounded-tr-lg rounded-br-lg" style="width: 400px; color: #154aa0; box-shadow: 0px 3px 12px 2px black;">Autores Populares</span>
             </div>
             <div class="flex flex-col flex-wrap items-center align-center self-center w-fit mb-20">
                 <x-highlighted-author-container authorName="Lucas Ramil" authorDescription="Lucas Ramil é um web designer que contribui para o Design Diário, uma plataforma de artigos para designers. Seus textos focam em UX e UI para sites de e-commerce, apresentando soluções práticas para melhorar a navegação, otimizar o processo de checkout e criar interfaces atraentes que aumentam a conversão de vendas." authorProfileLink="" authorProfilePic="https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg" authorFollowersData="124" authorVerifiedArticlesData="54"></x-highlighted-author-container>
@@ -49,36 +65,4 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.swiper', {
-                slidesPerView: 1, // Um slide visível por vez
-                spaceBetween: 10, // Espaço entre os slides (em pixels)
-                loop: false, // Ativa o looping infinito
-                autoplay: {
-                    delay: 7000, // Troca automática a cada 3 segundos
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Permite clicar nos pontos da paginação
-                },
-                on: {
-                    init: function () {
-                        document.querySelectorAll('.swiper-pagination-bullet').forEach(bullet => {
-                            bullet.style.backgroundColor = '#fff';
-                        });
-                    },
-                    slideChangeTransitionStart: function () {
-                        document.querySelectorAll('.swiper-pagination-bullet-active').forEach(activeBullet => {
-                            activeBullet.style.backgroundColor = '#fff';
-                        });
-
-                        document.querySelectorAll('.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)').forEach(inactiveBullet => {
-                            inactiveBullet.style.backgroundColor = '#fff';
-                        });
-                    },
-                }
-            });
-        });
-    </script>
 @endsection
