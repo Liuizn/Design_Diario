@@ -1,0 +1,230 @@
+/* =======================
+   Container Principal
+   ======================= */
+   .container {
+    max-width: 900px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo do formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to top, #8790b6, #dce3ee); /* Gradiente de fundo */
+}
+
+/* =======================
+   Cabeçalho
+   ======================= */
+header h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =======================
+   Grupo de Formulário
+   ======================= */
+.form-group {
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block; /* Coloca o label acima do campo */
+    margin-bottom: 10px;
+}
+
+/* =======================
+   Upload de Imagem
+   ======================= */
+/* Botão de upload de imagem */
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    border: 2px dashed #b0c4de;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-upload-container .upload-button {
+    position: absolute; /* Posiciona o botão acima da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #121E69;
+    color: #fff;
+    border-radius: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 10px;
+    border: none;
+}
+
+.image-upload-container .upload-button:hover {
+    position: absolute; /* Posiciona o botão acima da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #acc5ec;
+    color: #fff;
+    border-radius: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border: none;
+}
+
+.image-upload-container .image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-upload-container .image-preview p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+
+/* =======================
+   Editor de Texto (TinyMCE)
+   ======================= */
+.form-group textarea {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+/* =======================
+   Botões de Ação (Estilizados com Imagens)
+   ======================= */
+   .form-actions {
+    display: flex; /* Alinha os botões lado a lado */
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaço em relação ao formulário */
+}
+
+/* Botão padrão */
+.form-actions button {
+    display: flex; /* Flexbox para alinhar texto e imagem */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Imagem dentro dos botões */
+.form-actions .button-icon {
+    width: 20px; /* Largura da imagem */
+    height: 20px; /* Altura da imagem */
+    display: inline-block; /* Garante que a imagem é tratada como inline */
+}
+
+/* Botão "Salvar" */
+.draft-button {
+    background-color: #DCE3EE;
+    font-weight: bold;
+    color: #121E69;
+}
+
+.draft-button:hover {
+    background-color: #acc5ec;
+    font-weight: bold;
+    color: #121E69;;
+}
+
+/* Botão "Publicar" */
+.publish-button {
+    background-color: #DCE3EE;
+    font-weight: bold;
+    color: #121E69;
+}
+
+.publish-button:hover {
+    background-color: #acc5ec;
+    font-weight: bold;
+    color: #121E69;;
+}
+
+/* Imagem dentro do botão "Publicar" */
+.publish-button .publish-icon {
+    width: 20px; /* Largura da imagem */
+    height: 20px; /* Altura da imagem */
+    display: inline-block;
+}
+
+
+/* =======================
+   Responsividade
+   ======================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column; /* Coloca os botões empilhados no modo responsivo */
+    }
+
+    .form-actions button {
+        width: 100%; /* Botões ocupam 100% da largura */
+        text-align: center;
+    }
+
+    /* Mensagem de erro */
+    .error-message {
+        background-color: #ffe5e5;
+        color: #d9534f;
+        border: 1px solid #d9534f;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        display: none; /* Oculta por padrão */
+    }
+
+    .error-message ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .error-message li {
+        font-size: 14px;
+    }
+}
+
