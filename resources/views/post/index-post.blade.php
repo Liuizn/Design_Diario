@@ -30,7 +30,7 @@
     <h2 style="background-color: #9BE43E;" class="text-lg italic px-4 py-1 rounded-r-lg inline-block">Publicados</h2>
 
     <!-- Publicados -->
-    <section class="px-8 py-8">
+    <section class="px-36 py-8">
 
         @if ($posts->isEmpty())
             <p>Não há posts disponíveis.</p>

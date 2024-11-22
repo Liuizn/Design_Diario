@@ -107,7 +107,7 @@
                 <input type="hidden" id="status" name="status" value="rascunho">
 
                 <!-- Upload da imagem -->
-                <div class="form-group">
+                <div class="form-group my-6">
                     <div class="image-upload-container">
                         <label class="upload-button">
                             <input type="file" id="imageInput" name="imagem" accept="image/*" hidden>
