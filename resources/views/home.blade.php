@@ -2,7 +2,7 @@
 
 @section('content')
     <style>nav { background-color: #0f1959!important; } main { background-image: linear-gradient(to bottom, #0f1959, #154aa0); }</style>
-    <div class="flex flex-col">
+    <div class="flex flex-col pt-10">
         <div class="flex flex-row flex-wrap align-center justify-center mb-20">
             <x-home-carousel></x-home-carousel>
         </div>

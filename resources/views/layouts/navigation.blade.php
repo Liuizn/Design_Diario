@@ -9,6 +9,12 @@
                     </a>
                 </div>
 
+                @if (Route::is('home'))
+                    <div class="flex flex-row flex items-center text-black">
+                        <input class="bg-slate-300 p-2" placeholder="O que você está buscando?" style="border-radius: 10px; width: 700px;">
+                    </div>
+                @endif
+
                 <!-- Navigation Links -->
                 {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-black dark:text-black">
