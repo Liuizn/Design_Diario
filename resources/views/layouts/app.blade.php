@@ -28,8 +28,8 @@
     @include('layouts.navigation')
 
 
-    <div class="min-h-screen {{ Route::currentRouteName() === 'meus_artigos' ? '' : 'bg-gray-900 dark:bg-gray-900' }}"
-        @if (Route::currentRouteName() === 'meus_artigos') style="background: linear-gradient(to top, #FFFFFF, #DEE7F9);" @endif>
+    <div class="min-h-screen {{ Route::currentRouteName() === 'posts.index' ? '' : 'bg-gray-900 dark:bg-gray-900' }}"
+        @if (Route::currentRouteName() === 'posts.index') style="background: linear-gradient(to top, #FFFFFF, #DEE7F9);" @endif>
 
         <!-- Page Heading -->
         @isset($header)

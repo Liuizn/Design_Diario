@@ -15,7 +15,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- TinyMCE -->
-    <script src="https://cdn.tiny.cloud/1/dmgo6fetywfansnjlqrukw8gmpsgk4dzwv3ht1b56b8n1tmo/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/dmgo6fetywfansnjlqrukw8gmpsgk4dzwv3ht1b56b8n1tmo/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         // Inicialização do TinyMCE
         tinymce.init({
@@ -91,6 +91,7 @@
     </script>
 </head>
 <body>
+    @include('layouts.navigation')
     <div>
 
         <div id="error-message" class="error-message hidden">

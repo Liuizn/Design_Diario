@@ -1,5 +1,5 @@
 <nav x-data="{ open: false }"
-    class="{{ Route::is('home') ? 'bg-transparent text-white' : 'bg-lime-400 dark:bg-lime-400 border-b border-gray-100 dark:border-gray-700' }} pt-4 pb-4">
+    class="{{ in_array(Route::currentRouteName(), ['home', 'posts.create']) ? 'bg-blue-950 text-white' : 'bg-lime-400 dark:bg-lime-400 border-b border-gray-100 dark:border-gray-700' }} pt-4 pb-4">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">

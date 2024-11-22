@@ -65,7 +65,7 @@
                             </h2>
                         </header>
 
-                        <a href="{{ route('meus_artigos') }}">
+                        <a href="{{ route('posts.index') }}">
                             <div class="flex flex-column my-2">
                                 <div class="border border-blue-950 flex items-center mr-2 rounded-lg">
                                     <span class="material-symbols-outlined px-1 text-2xl ">article</span>
@@ -77,15 +77,17 @@
                             </div>
                         </a>
 
-                        <div class="flex flex-column my-2">
-                            <div class="border border-blue-950 flex items-center mr-2 rounded-lg">
-                                <span class="material-symbols-outlined px-1 text-2xl ">edit_note</span>
-                            </div>
+                        <a href="{{ route('posts.create') }}">
+                            <div class="flex flex-column my-2">
+                                <div class="border border-blue-950 flex items-center mr-2 rounded-lg">
+                                    <span class="material-symbols-outlined px-1 text-2xl ">edit_note</span>
+                                </div>
 
-                            <p class="mt-1 text-lg text-black">
-                                {{ __('Escrever novo artigo') }}
-                            </p>
-                        </div>
+                                <p class="mt-1 text-lg text-black">
+                                    {{ __('Escrever novo artigo') }}
+                                </p>
+                            </div>
+                        </a>
 
                         <div class="flex flex-column my-2">
                             <div class="border border-blue-950 flex items-center mr-2 rounded-lg">

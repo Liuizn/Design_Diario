@@ -16,8 +16,9 @@ class PostController extends Controller
     public function index()
     {
          // Recupera todos os posts, com ordenação do mais recente para o mais antigo
-        $posts = Posts::orderBy('created_at', 'desc')->get();
-        return view('post.index-post', compact('posts'));
+        $posts = Posts::where('status', 'publicado')->orderBy('created_at', 'desc')->get();
+        $rascunhos = Posts::where('status', 'rascunho')->orderBy('created_at', 'desc')->get();
+        return view('post.index-post', compact('posts'))->with('rascunhos', $rascunhos);
     }
 
     /**
@@ -181,7 +182,7 @@ class PostController extends Controller
         // Excluir o post
         $post->delete();
 
-        return redirect()->route('post.index-post')->with('success', 'Post deletado com sucesso!');
+        return redirect()->route('posts.index')->with('success', 'Post deletado com sucesso!');
     }
 
 }
